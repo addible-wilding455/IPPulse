@@ -51,7 +51,7 @@ def check_and_update():
                     print("Запуск новой версии в отдельном окне...")
 
                     if os.name == 'nt':
-                        subprocess.Popen(['start', 'cmd', '/k', 'python', 'main.py'], shell=True)
+                        subprocess.Popen('start "IPPulse Update" python main.py', shell=True)
                     else:
                         os.execv(sys.executable, [sys.executable] + sys.argv)
                     
