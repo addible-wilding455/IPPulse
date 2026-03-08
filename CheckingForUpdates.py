@@ -2,7 +2,6 @@ import requests
 import json
 import os
 import sys
-import subprocess
 
 GITHUB_RAW_URL = "https://raw.githubusercontent.com/z1ruz-code/IPPulse/main/"
 API_RELEASE_URL = "https://api.github.com/repos/z1ruz-code/IPPulse/releases/latest"
@@ -34,7 +33,7 @@ def check_and_update():
 
         if latest_version and latest_version != current_version:
             print(f"\n[!] Update available: {current_version} -> {latest_version}")
-            choice = input("Update and restart? (y/n): ").lower()
+            choice = input("Update now? (y/n): ").lower()
             
             if choice == 'y':
                 print("Downloading updates...")
@@ -47,14 +46,10 @@ def check_and_update():
                         success = False
                 
                 if success:
-                    print("Update successful.")
-                    print("Restarting in a new window...")
-
-                    if os.name == 'nt':
-                        subprocess.Popen('start cmd /k "python main.py"', shell=True, creationflags=subprocess.CREATE_NEW_PROCESS_GROUP)
-                    else:
-                        os.execv(sys.executable, [sys.executable] + sys.argv)
-                    
+                    print("\n" + "="*40)
+                    print("UPDATE SUCCESSFUL!")
+                    print("Please restart the program (python main.py)")
+                    print("="*40)
                     os._exit(0)
                 else:
                     print("Error updating files.")
