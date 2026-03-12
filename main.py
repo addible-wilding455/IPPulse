@@ -6,6 +6,7 @@ import CheckingForUpdates
 
 CheckingForUpdates.check_and_update()
 
+print("IPPulse by z1ruz-code")
 ip_address = input("Enter IP address: ")
 url = f"https://api.ipapi.is/?q={ip_address}"
 
@@ -35,4 +36,5 @@ try:
         print(f"Saved: {filepath}")
 
 except requests.exceptions.RequestException as e:
+
     print(f"Error: {e}")
